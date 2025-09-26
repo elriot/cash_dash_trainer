@@ -12,8 +12,9 @@ import FiftyDollarsBill from "@/components/bills/FiftyDollarsBill";
 import HundredDollarsBill from "@/components/bills/HundredDollarsBill";
 import Pile from "@/components/Pile";
 import { COIN_SIZE, BILL_SIZE } from "@/constants/denominations";
+import Quarter from "@/components/coins/Quater";
 
-const CoinComp = { Nickel, Dime, Loonie, Toonie };
+const CoinComp = { Nickel, Dime, Quarter, Loonie, Toonie };
 const BillComp = {
   FiveDollar: FiveDollarsBill,
   TenDollar: TenDollarsBill,
@@ -41,6 +42,7 @@ const clamp = (v, min, max) => Math.min(Math.max(v, min), max);
 
   return (
     <VStack spacing={4}>
+			<Quarter></Quarter>
       <Text fontSize="xl">💵 How much is this?</Text>
 
 			<Box

@@ -1,6 +1,7 @@
 import { Box } from "@chakra-ui/react";
 
 export default function Pile({ Component, qty, x, y, size }) {
+	if (Component == null) return null;
   return (
     <>
       {Array.from({ length: qty }).map((_, i) => (
