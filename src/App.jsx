@@ -6,6 +6,11 @@ import Nickle from "./components/coins/Nickel";
 import Quater from "./components/coins/Quater";
 import Loonie from "./components/coins/Loonie";
 import Toonie from "./components/coins/Toonie";
+import FiveDollarsBill from "./components/bills/FiveDollarsBill";
+import TenDollarsBill from "./components/bills/TenDollarsBill";
+import TwentyDollarsBill from "./components/bills/TwentyDollarsBill";
+import FiftyDollarsBill from "./components/bills/FiftyDollarsBill";
+import HundredDollarsBill from "./components/bills/HundredDollarsBill";
 
 function App() {
   return (
@@ -34,6 +39,23 @@ function App() {
         <VStack spacing={1}>
           <Toonie />
           <Text fontSize="xs">1$</Text>
+        </VStack>
+      </HStack>
+      <HStack>
+        <VStack>
+          <FiveDollarsBill />
+        </VStack>
+        <VStack>
+          <TenDollarsBill />
+        </VStack>
+        <VStack>
+          <TwentyDollarsBill />
+        </VStack>
+        <VStack>
+          <FiftyDollarsBill />
+        </VStack>
+        <VStack>
+          <HundredDollarsBill />
         </VStack>
       </HStack>
     </>
